@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dependency-parsing-claim-audit"
+version = "0.1.0"
+description = "Offline documentation claim auditor"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+dependencies = []
+
+[project.scripts]
+dependency-parsing-claim-audit = "dependency_parsing_claim_audit.__main__:main"
+
+[tool.setuptools]
+packages = ["dependency_parsing_claim_audit", "tests"]
